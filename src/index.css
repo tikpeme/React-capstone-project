@@ -11,6 +11,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --Primary-color-rgb: 244, 206, 20; /* RGB value for #f4ce14 */
+  --Highlight-color-rgb: 237, 239, 238; /* RGB value for #edefee */
+  --Dark-color-rgb: 73, 94, 87; /* RGB value for #495e57 */
+  --Secondary-color-rgb: 238, 153, 114; /* RGB value for #BD1D1D */
 }
 
 @tailwind base;

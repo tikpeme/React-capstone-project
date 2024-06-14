@@ -1,7 +1,7 @@
-const Nav = () => {
+const Nav = ({ className }) => {
   return (
     <nav>
-      <ul className="flex flex-row  gap-5  justify-end border">
+      <ul className={`flex flex-row gap-2 lg:gap-5 ${className}`}>
         <li>
           <a className="header-nav-title">Home</a>
         </li>
