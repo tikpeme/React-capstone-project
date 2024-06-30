@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Nav from "./Nav";
 import Hamburger from "hamburger-react";
+import { Link } from "react-router-dom";
 
 import image from "../assets/Logo.svg";
 
@@ -10,7 +11,9 @@ const Header = () => {
   return (
     <header className="">
       <div className="hidden sm:flex flex-row items-center justify-between md:max-w-[95%] lg:max-w-[80%] m-auto py-7">
-        <img src={image} width={200} />
+        <Link to="/">
+          <img src={image} width={200} />
+        </Link>
         <Nav />
       </div>
       <div

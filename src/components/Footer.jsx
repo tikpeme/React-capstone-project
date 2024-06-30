@@ -1,13 +1,16 @@
 import footerImage from "../assets/Logo.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center sm:justify-between items-center max-w-[80rem] m-auto pt-10 gap-8  sm:flex-row sm:items-start ">
-      <img
-        src={footerImage}
-        width={300}
-        className="  object-contain self-center"
-      />
+    <footer className="flex flex-col justify-center sm:justify-between items-center max-w-[80rem] m-auto p-10 gap-8  sm:flex-row sm:items-start ">
+      <Link to="/">
+        <img
+          src={footerImage}
+          width={300}
+          className="  object-contain self-center"
+        />
+      </Link>
       <section className="text-center sm:text-left">
         <h1 className=" header-nav-title "> Doormat Navigation </h1>
         <nav>

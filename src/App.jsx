@@ -1,20 +1,30 @@
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import HeroSection from "./components/HeroSection";
-import Highlights from "./components/Highlights";
-import About from "./components/About";
+
+import HomePage from "./components/HomePage";
+import Layout from "./components/Layout";
+import BookingPage from "./components/BookingPage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "booking",
+        element: <BookingPage />,
+      },
+    ],
+  },
+  {},
+]);
 
 function App() {
-  return (
-    <>
-      <Header />
-      <HeroSection />
-      <Highlights />
-      <About />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
