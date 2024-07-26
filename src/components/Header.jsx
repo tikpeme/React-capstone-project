@@ -30,6 +30,7 @@ const Header = () => {
           ></div>
         )}
         <div
+          onClick={() => setOpen(false)}
           className={`fixed inset-0 shadow-lg w-[100%] h-full  bg-highlight bg-opacity-90 transform transition-transform duration-500 ease-in-out  z-10    ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
@@ -41,7 +42,9 @@ const Header = () => {
               toggle={setOpen}
             />
           </div>
-          <Nav className={"flex-col text-primary text-center pt-24 gap-12 "} />
+          <Nav
+            className={"flex-col text-primary text-center pt-24 gap-[4rem] "}
+          />
         </div>
       </div>
     </header>

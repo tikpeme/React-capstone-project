@@ -1,24 +1,30 @@
+import { Outlet, Link } from "react-router-dom";
+
 const Nav = ({ className }) => {
   return (
     <nav>
       <ul className={`flex flex-row gap-2 lg:gap-5 ${className}`}>
         <li>
-          <a className="header-nav-title">Home</a>
+          <Link to="/" className="header-nav-title">
+            Home
+          </Link>
         </li>
         <li>
-          <a className="header-nav-title">About</a>
+          <Link className="header-nav-title">About</Link>
         </li>
         <li>
-          <a className="header-nav-title">Menu</a>
+          <Link className="header-nav-title">Menu</Link>
         </li>
         <li>
-          <a className="header-nav-title">Reservations</a>
+          <Link className="header-nav-title" to="./booking">
+            Reservations
+          </Link>
         </li>
         <li>
-          <a className="header-nav-title">Order Online</a>
+          <Link className="header-nav-title">Order Online</Link>
         </li>
         <li>
-          <a className="header-nav-title">Login</a>
+          <Link className="header-nav-title">Login</Link>
         </li>
       </ul>
     </nav>
