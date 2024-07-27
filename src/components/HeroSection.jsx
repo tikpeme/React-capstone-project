@@ -2,8 +2,10 @@ import React from "react";
 import Button from "./Button";
 
 import HeroImage2 from "../assets/restaurantfood.jpg";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="  bg-dark h-[40rem] ">
       <div className="max-w-[80rem] m-auto h-full flex flex-row ">
@@ -19,7 +21,10 @@ const HeroSection = () => {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Button className={"mt-10"}> Reserve a Table </Button>
+          <Button className={"mt-10"} onClick={() => navigate("./booking")}>
+            {" "}
+            Reserve a Table{" "}
+          </Button>
         </div>
         <div className=" h-full  content-center overflow-clip p-4 flex-[2]">
           <img

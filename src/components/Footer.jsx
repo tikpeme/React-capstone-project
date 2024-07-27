@@ -16,7 +16,9 @@ const Footer = () => {
         <nav>
           <ul className={`flex flex-col  gap-3  justify-end `}>
             <li>
-              <a className="text-[1rem]">Home</a>
+              <Link to="./" className="text-[1rem]">
+                Home
+              </Link>
             </li>
             <li>
               <a className="text-[1rem]">About</a>
@@ -25,7 +27,9 @@ const Footer = () => {
               <a className="text-[1rem]">Menu</a>
             </li>
             <li>
-              <a className="text-[1rem]">Reservations</a>
+              <Link to="/booking" className="text-[1rem]">
+                Reservations
+              </Link>
             </li>
             <li>
               <a className="text-[1rem]">Order Online</a>

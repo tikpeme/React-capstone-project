@@ -20,7 +20,9 @@ const Header = () => {
         id="mobile-nav"
         className="sm:hidden flex flex-row justify-around py-4"
       >
-        <img src={image} width={200} />
+        <Link to="./">
+          <img src={image} width={200} />
+        </Link>
         <Hamburger toggled={isOpen} toggle={setOpen} />
 
         {isOpen && (
